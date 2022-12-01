@@ -1,0 +1,12 @@
+__pycache__/
+venv/
+private/
+*.bak
+*.bak1
+*.bak2
+*.bak3
+*.old
+a.out
+input_github
+input_epis
+input_boberle
