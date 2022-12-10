@@ -1,0 +1,1441 @@
+<html><head><style>.sprite{border:1px black solid;}.cursor{color:red;font-weight:bold;}</style></head><body><code><pre id="e"></pre></code><script>const e=document.getElementById("e"); let c=0;; const t=[`<span class="sprite"><span class="cursor">#</span>  </span>                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`<span class="sprite">#<span class="cursor">#</span> </span>                                     
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##<span class="cursor">.</span>            <span class="sprite">   </span>                      
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##.<span class="cursor">.</span>           <span class="sprite">   </span>                      
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..<span class="sprite"><span class="cursor">#</span>  </span>                                 
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..<span class="sprite">#<span class="cursor">#</span> </span>                                 
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##<span class="cursor">.</span>   <span class="sprite">   </span>                           
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##.<span class="cursor">.</span>  <span class="sprite">   </span>                           
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##.<span class="sprite">.<span class="cursor">#</span> </span>                              
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##.<span class="sprite">.#<span class="cursor">#</span></span>                              
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##<span class="cursor">.</span> <span class="sprite">   </span>                         
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##.<span class="cursor">.</span><span class="sprite">   </span>                         
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##.<span class="sprite">.<span class="cursor">#</span> </span>                          
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##.<span class="sprite">.#<span class="cursor">#</span></span>                          
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##.<span class="sprite">.##</span>..##..##<span class="cursor">.</span>                         
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##.<span class="sprite">.##</span>..##..##.<span class="cursor">.</span>                        
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..<span class="sprite"><span class="cursor">#</span>  </span>                     
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..<span class="sprite">#<span class="cursor">#</span> </span>                     
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##<span class="cursor">.</span> <span class="sprite">   </span>                 
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##.<span class="cursor">.</span><span class="sprite">   </span>                 
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..<span class="sprite"><span class="cursor">#</span>  </span>                 
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##.<span class="sprite">.#<span class="cursor">#</span></span>                  
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##.<span class="sprite">.##</span><span class="cursor">.</span>                 
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##.<span class="cursor">.</span><span class="sprite">   </span>             
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..<span class="sprite"><span class="cursor">#</span>  </span>             
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##.<span class="sprite">.#<span class="cursor">#</span></span>              
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##.<span class="sprite">.##</span><span class="cursor">.</span>             
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##.<span class="cursor">.</span><span class="sprite">   </span>         
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..<span class="sprite"><span class="cursor">#</span>  </span>         
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##.<span class="sprite">.#<span class="cursor">#</span></span>          
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##.<span class="sprite">.##</span><span class="cursor">.</span>         
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##.<span class="cursor">.</span><span class="sprite">   </span>     
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..<span class="sprite"><span class="cursor">#</span>  </span>     
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##.<span class="sprite">.#<span class="cursor">#</span></span>      
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##.<span class="sprite">.##</span><span class="cursor">.</span>     
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##.<span class="cursor">.</span><span class="sprite">   </span> 
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..<span class="sprite"><span class="cursor">#</span>  </span> 
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##.<span class="sprite">.#<span class="cursor">#</span></span>  
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##.<span class="sprite">.##</span><span class="cursor">.</span> 
+                                        
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##.<span class="cursor">.</span>
+<span class="sprite">   </span>                                     
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+<span class="sprite"><span class="cursor">#</span>  </span>                                     
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+#<span class="sprite"><span class="cursor">#</span>  </span>                                    
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+#<span class="sprite">#<span class="cursor">#</span> </span>                                    
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###<span class="cursor">.</span>                     <span class="sprite">   </span>            
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###.<span class="cursor">.</span>                    <span class="sprite">   </span>            
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###..<span class="cursor">.</span><span class="sprite">   </span>                               
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...<span class="sprite"><span class="cursor">#</span>  </span>                               
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...#<span class="sprite"><span class="cursor">#</span>  </span>                              
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...#<span class="sprite">#<span class="cursor">#</span> </span>                              
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###<span class="cursor">.</span>             <span class="sprite">   </span>              
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###.<span class="cursor">.</span>            <span class="sprite">   </span>              
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###..<span class="cursor">.</span><span class="sprite">   </span>                         
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...<span class="sprite"><span class="cursor">#</span>  </span>                         
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...<span class="sprite">#<span class="cursor">#</span> </span>                         
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...<span class="sprite">##<span class="cursor">#</span></span>                         
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###<span class="cursor">.</span>                 <span class="sprite">   </span>    
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###.<span class="cursor">.</span>                <span class="sprite">   </span>    
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###..<span class="cursor">.</span><span class="sprite">   </span>                   
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...<span class="sprite"><span class="cursor">#</span>  </span>                   
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...<span class="sprite">#<span class="cursor">#</span> </span>                   
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...<span class="sprite">##<span class="cursor">#</span></span>                   
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###<span class="sprite">...</span>###<span class="cursor">.</span>                  
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###<span class="sprite">...</span>###.<span class="cursor">.</span>                 
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###..<span class="cursor">.</span><span class="sprite">   </span>             
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...<span class="sprite"><span class="cursor">#</span>  </span>             
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...#<span class="sprite"><span class="cursor">#</span>  </span>            
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...#<span class="sprite">#<span class="cursor">#</span> </span>            
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###.<span class="sprite">..#</span>##<span class="cursor">.</span>            
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###.<span class="sprite">..#</span>##.<span class="cursor">.</span>           
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###..<span class="cursor">.</span><span class="sprite">   </span>       
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...<span class="sprite"><span class="cursor">#</span>  </span>       
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...#<span class="sprite"><span class="cursor">#</span>  </span>      
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...#<span class="sprite">#<span class="cursor">#</span> </span>      
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###<span class="cursor">.</span>  <span class="sprite">   </span> 
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###.<span class="cursor">.</span> <span class="sprite">   </span> 
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###..<span class="cursor">.</span><span class="sprite">   </span> 
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...<span class="sprite"><span class="cursor">#</span>  </span> 
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...<span class="sprite">#<span class="cursor">#</span> </span> 
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...<span class="sprite">##<span class="cursor">#</span></span> 
+                                        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###<span class="cursor">.</span>
+                                    <span class="sprite">   </span> 
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+<span class="sprite"><span class="cursor">#</span>  </span>                                     
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+<span class="sprite">#<span class="cursor">#</span> </span>                                     
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+<span class="sprite">##<span class="cursor">#</span></span>                                     
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+#<span class="sprite">##<span class="cursor">#</span></span>                                    
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+#<span class="sprite">###</span><span class="cursor">.</span>                                   
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####.<span class="cursor">.</span>  <span class="sprite">   </span>                             
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####..<span class="cursor">.</span> <span class="sprite">   </span>                             
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####...<span class="cursor">.</span><span class="sprite">   </span>                             
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....<span class="sprite"><span class="cursor">#</span>  </span>                             
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....<span class="sprite">#<span class="cursor">#</span> </span>                             
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....##<span class="sprite"><span class="cursor">#</span>  </span>                           
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....##<span class="sprite">#<span class="cursor">#</span> </span>                           
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####<span class="cursor">.</span>   <span class="sprite">   </span>                     
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####.<span class="cursor">.</span>  <span class="sprite">   </span>                     
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####..<span class="cursor">.</span> <span class="sprite">   </span>                     
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####...<span class="cursor">.</span><span class="sprite">   </span>                     
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....<span class="sprite"><span class="cursor">#</span>  </span>                     
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....<span class="sprite">#<span class="cursor">#</span> </span>                     
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....<span class="sprite">##<span class="cursor">#</span></span>                     
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....#<span class="sprite">##<span class="cursor">#</span></span>                    
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....#<span class="sprite">###</span><span class="cursor">.</span>                   
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....#<span class="sprite">###</span>.<span class="cursor">.</span>                  
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....#<span class="sprite">###</span>..<span class="cursor">.</span>                 
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####...<span class="cursor">.</span><span class="sprite">   </span>             
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....<span class="sprite"><span class="cursor">#</span>  </span>             
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....#<span class="sprite"><span class="cursor">#</span>  </span>            
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....#<span class="sprite">#<span class="cursor">#</span> </span>            
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....#<span class="sprite">##<span class="cursor">#</span></span>            
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####<span class="sprite">...</span>.####....####<span class="cursor">.</span>           
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####<span class="sprite">...</span>.####....####.<span class="cursor">.</span>          
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....#<span class="sprite">###</span>..<span class="cursor">.</span>         
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....#<span class="sprite">###</span>...<span class="cursor">.</span>        
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....<span class="sprite"><span class="cursor">#</span>  </span>     
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....<span class="sprite">#<span class="cursor">#</span> </span>     
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....<span class="sprite">##<span class="cursor">#</span></span>     
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....#<span class="sprite">##<span class="cursor">#</span></span>    
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....#<span class="sprite">###</span><span class="cursor">.</span>   
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+<span class="sprite">###</span>#....####....####....####....####.<span class="cursor">.</span>  
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+<span class="sprite">###</span>#....####....####....####....####..<span class="cursor">.</span> 
+                                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####...<span class="cursor">.</span>
+<span class="sprite">   </span>                                     
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+<span class="sprite"><span class="cursor">#</span>  </span>                                     
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+<span class="sprite">#<span class="cursor">#</span> </span>                                     
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+##<span class="sprite"><span class="cursor">#</span>  </span>                                   
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+##<span class="sprite">#<span class="cursor">#</span> </span>                                   
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+##<span class="sprite">##<span class="cursor">#</span></span>                                   
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+##<span class="sprite">###</span><span class="cursor">.</span>                                  
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+##<span class="sprite">###</span>.<span class="cursor">.</span>                                 
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####..<span class="cursor">.</span>  <span class="sprite">   </span>                           
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####...<span class="cursor">.</span> <span class="sprite">   </span>                           
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####....<span class="cursor">.</span><span class="sprite">   </span>                           
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####....<span class="sprite">.<span class="cursor">#</span> </span>                            
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####....<span class="sprite">.#<span class="cursor">#</span></span>                            
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#<span class="sprite">#<span class="cursor">#</span> </span>                          
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#<span class="sprite">##<span class="cursor">#</span></span>                          
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....##<span class="sprite">##<span class="cursor">#</span></span>                         
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....##<span class="sprite">###</span><span class="cursor">.</span>                        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....##<span class="sprite">###</span>.<span class="cursor">.</span>                       
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####..<span class="cursor">.</span>           <span class="sprite">   </span>        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####...<span class="cursor">.</span>          <span class="sprite">   </span>        
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####....<span class="cursor">.</span><span class="sprite">   </span>                 
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....<span class="sprite"><span class="cursor">#</span>  </span>                 
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#<span class="sprite"><span class="cursor">#</span>  </span>                
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#<span class="sprite">#<span class="cursor">#</span> </span>                
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....##<span class="sprite">#<span class="cursor">#</span> </span>               
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....##<span class="sprite">##<span class="cursor">#</span></span>               
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####....<span class="sprite">.##</span>###<span class="cursor">.</span>              
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####....<span class="sprite">.##</span>###.<span class="cursor">.</span>             
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####..<span class="cursor">.</span>  <span class="sprite">   </span>       
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####...<span class="cursor">.</span> <span class="sprite">   </span>       
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####....<span class="cursor">.</span><span class="sprite">   </span>       
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....<span class="sprite"><span class="cursor">#</span>  </span>       
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#<span class="sprite"><span class="cursor">#</span>  </span>      
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#<span class="sprite">#<span class="cursor">#</span> </span>      
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#<span class="sprite">##<span class="cursor">#</span></span>      
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....##<span class="sprite">##<span class="cursor">#</span></span>     
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....##<span class="sprite">###</span><span class="cursor">.</span>    
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....##<span class="sprite">###</span>.<span class="cursor">.</span>   
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....##<span class="sprite">###</span>..<span class="cursor">.</span>  
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####....<span class="sprite">.##</span>###.....#####...<span class="cursor">.</span> 
+                                        
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####....<span class="cursor">.</span>
+                   <span class="sprite">   </span>                  
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+<span class="sprite"><span class="cursor">#</span>  </span>                                     
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+<span class="sprite">#<span class="cursor">#</span> </span>                                     
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+#<span class="sprite">#<span class="cursor">#</span> </span>                                    
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+#<span class="sprite">##<span class="cursor">#</span></span>                                    
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+####<span class="sprite"><span class="cursor">#</span>  </span>                                 
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+####<span class="sprite">#<span class="cursor">#</span> </span>                                 
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######<span class="cursor">.</span>                       <span class="sprite">   </span>       
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######.<span class="cursor">.</span>                      <span class="sprite">   </span>       
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+<span class="sprite">###</span>###..<span class="cursor">.</span>                               
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+<span class="sprite">###</span>###...<span class="cursor">.</span>                              
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######....<span class="cursor">.</span> <span class="sprite">   </span>                         
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######.....<span class="cursor">.</span><span class="sprite">   </span>                         
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######.....<span class="sprite">.<span class="cursor">#</span> </span>                          
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######.....<span class="sprite">.#<span class="cursor">#</span></span>                          
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......##<span class="sprite"><span class="cursor">#</span>  </span>                       
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......##<span class="sprite">#<span class="cursor">#</span> </span>                       
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......###<span class="sprite">#<span class="cursor">#</span> </span>                      
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......###<span class="sprite">##<span class="cursor">#</span></span>                      
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......###<span class="sprite">###</span><span class="cursor">.</span>                     
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......###<span class="sprite">###</span>.<span class="cursor">.</span>                    
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......###<span class="sprite">###</span>..<span class="cursor">.</span>                   
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######<span class="sprite">...</span>...######...<span class="cursor">.</span>                  
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######<span class="sprite">...</span>...######....<span class="cursor">.</span>                 
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######.....<span class="cursor">.</span><span class="sprite">   </span>             
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......<span class="sprite"><span class="cursor">#</span>  </span>             
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......#<span class="sprite"><span class="cursor">#</span>  </span>            
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......#<span class="sprite">#<span class="cursor">#</span> </span>            
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......###<span class="sprite"><span class="cursor">#</span>  </span>          
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......###<span class="sprite">#<span class="cursor">#</span> </span>          
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......###<span class="sprite">##<span class="cursor">#</span></span>          
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......###<span class="sprite">###</span><span class="cursor">.</span>         
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######.<span class="cursor">.</span>    <span class="sprite">   </span> 
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######..<span class="cursor">.</span>   <span class="sprite">   </span> 
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######...<span class="cursor">.</span>  <span class="sprite">   </span> 
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######....<span class="cursor">.</span> <span class="sprite">   </span> 
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######.....<span class="cursor">.</span><span class="sprite">   </span> 
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######.....<span class="sprite">.<span class="cursor">#</span> </span>  
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######.....<span class="sprite">.#<span class="cursor">#</span></span>  
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......#<span class="sprite">#<span class="cursor">#</span> </span>
+                                        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......###<span class="cursor">#</span>
+                                     <span class="sprite">   </span>
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+<span class="sprite"><span class="cursor">#</span>  </span>                                     
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+<span class="sprite">#<span class="cursor">#</span> </span>                                     
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#<span class="sprite">#<span class="cursor">#</span> </span>                                    
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#<span class="sprite">##<span class="cursor">#</span></span>                                    
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+####<span class="sprite"><span class="cursor">#</span>  </span>                                 
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+####<span class="sprite">#<span class="cursor">#</span> </span>                                 
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+####<span class="sprite">##<span class="cursor">#</span></span>                                 
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######<span class="cursor">.</span>           <span class="sprite">   </span>                  
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.<span class="cursor">.</span>          <span class="sprite">   </span>                  
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......##<span class="sprite">##
+#</span>######..<span class="cursor">.</span>                              
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......##<span class="sprite">##
+#</span>######...<span class="cursor">.</span>                             
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######....<span class="cursor">.</span>        <span class="sprite">   </span>                 
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.....<span class="cursor">.</span>       <span class="sprite">   </span>                 
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######......<span class="cursor">.</span><span class="sprite">   </span>                       
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......<span class="sprite"><span class="cursor">#</span>  </span>                       
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#<span class="sprite"><span class="cursor">#</span>  </span>                      
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#<span class="sprite">#<span class="cursor">#</span> </span>                      
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#<span class="sprite">##<span class="cursor">#</span></span>                      
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......###<span class="sprite">#<span class="cursor">#</span> </span>                    
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......###<span class="sprite">##<span class="cursor">#</span></span>                    
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......####<span class="sprite">##<span class="cursor">#</span></span>                   
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......####<span class="sprite">###</span><span class="cursor">.</span>                  
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......####<span class="sprite">###</span>.<span class="cursor">.</span>                 
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.<span class="sprite">...</span>...#######..<span class="cursor">.</span>                
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.<span class="sprite">...</span>...#######...<span class="cursor">.</span>               
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.<span class="sprite">...</span>...#######....<span class="cursor">.</span>              
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.<span class="sprite">...</span>...#######.....<span class="cursor">.</span>             
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######......<span class="cursor">.</span><span class="sprite">   </span>         
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######.......<span class="sprite"><span class="cursor">#</span>  </span>         
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######.......#<span class="sprite"><span class="cursor">#</span>  </span>        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######.......#<span class="sprite">#<span class="cursor">#</span> </span>        
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######.......###<span class="sprite"><span class="cursor">#</span>  </span>      
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######.......###<span class="sprite">#<span class="cursor">#</span> </span>      
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######.......#####<span class="sprite"><span class="cursor">#</span>  </span>    
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######.......#####<span class="sprite">#<span class="cursor">#</span> </span>    
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######......<span class="sprite">.##</span>#####<span class="cursor">.</span>    
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######......<span class="sprite">.##</span>#####.<span class="cursor">.</span>   
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......##<span class="sprite">###</span>##.......#######..<span class="cursor">.</span>  
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......##<span class="sprite">###</span>##.......#######...<span class="cursor">.</span> 
+`,`##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######.......#######....<span class="cursor">.</span>
+`,]; setInterval(()=>{e.innerHTML=t[c++]; if(c==t.length) c=0;},200);</script></body></html>
