@@ -55,7 +55,7 @@ int main(int argc, char **argv) {
       play_round(monkey_count, monkeys1, -1);
 
    unsigned long monkey_business = find_monkey_business(monkey_count, monkeys1);
-   printf("monkey business (first part): %ld\n", monkey_business);
+   printf("monkey business (first part): %lu\n", monkey_business);
 
    // part 2
    int mod = 1;
@@ -65,7 +65,7 @@ int main(int argc, char **argv) {
       play_round(monkey_count, monkeys2, mod);
 
    monkey_business = find_monkey_business(monkey_count, monkeys2);
-   printf("monkey business (second part): %ld\n", monkey_business);
+   printf("monkey business (second part): %lu\n", monkey_business);
 
    return 0;
 
