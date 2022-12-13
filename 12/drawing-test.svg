@@ -1,0 +1,43 @@
+<svg viewBox="0 0 80 50" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" fill="#89cc78" width="10" height="10" stroke-width="0" />
+<rect x="10" y="0" fill="#89cc78" width="10" height="10" stroke-width="0" />
+<rect x="20" y="0" fill="#badf96" width="10" height="10" stroke-width="0" />
+<rect x="30" y="0" fill="#cde6a0" width="10" height="10" stroke-width="0" />
+<rect x="40" y="0" fill="#9dd484" width="10" height="10" stroke-width="0" />
+<rect x="50" y="0" fill="#b29567" width="10" height="10" stroke-width="0" />
+<rect x="60" y="0" fill="#daba7c" width="10" height="10" stroke-width="0" />
+<rect x="70" y="0" fill="#ffdc8f" width="10" height="10" stroke-width="0" />
+<rect x="0" y="10" fill="#89cc78" width="10" height="10" stroke-width="0" />
+<rect x="10" y="10" fill="#badf96" width="10" height="10" stroke-width="0" />
+<rect x="20" y="10" fill="#ebf2b2" width="10" height="10" stroke-width="0" />
+<rect x="30" y="10" fill="#fff9bc" width="10" height="10" stroke-width="0" />
+<rect x="40" y="10" fill="#f0f4b5" width="10" height="10" stroke-width="0" />
+<rect x="50" y="10" fill="#bee197" width="10" height="10" stroke-width="0" />
+<rect x="60" y="10" fill="#bee197" width="10" height="10" stroke-width="0" />
+<rect x="70" y="10" fill="#ffe9a4" width="10" height="10" stroke-width="0" />
+<rect x="0" y="20" fill="#89cc78" width="10" height="10" stroke-width="0" />
+<rect x="10" y="20" fill="#ebf2b2" width="10" height="10" stroke-width="0" />
+<rect x="20" y="20" fill="#ebf2b2" width="10" height="10" stroke-width="0" />
+<rect x="30" y="20" fill="#ffedaa" width="10" height="10" stroke-width="0" />
+<rect x="40" y="20" fill="#fff0af" width="10" height="10" stroke-width="0" />
+<rect x="50" y="20" fill="#fff0af" width="10" height="10" stroke-width="0" />
+<rect x="60" y="20" fill="#bee197" width="10" height="10" stroke-width="0" />
+<rect x="70" y="20" fill="#fff6b7" width="10" height="10" stroke-width="0" />
+<rect x="0" y="30" fill="#89cc78" width="10" height="10" stroke-width="0" />
+<rect x="10" y="30" fill="#ebf2b2" width="10" height="10" stroke-width="0" />
+<rect x="20" y="30" fill="#ebf2b2" width="10" height="10" stroke-width="0" />
+<rect x="30" y="30" fill="#ffe095" width="10" height="10" stroke-width="0" />
+<rect x="40" y="30" fill="#e7c582" width="10" height="10" stroke-width="0" />
+<rect x="50" y="30" fill="#be9f6d" width="10" height="10" stroke-width="0" />
+<rect x="60" y="30" fill="#8fce7c" width="10" height="10" stroke-width="0" />
+<rect x="70" y="30" fill="#dcecaa" width="10" height="10" stroke-width="0" />
+<rect x="0" y="40" fill="#89cc78" width="10" height="10" stroke-width="0" />
+<rect x="10" y="40" fill="#badf96" width="10" height="10" stroke-width="0" />
+<rect x="20" y="40" fill="#fff2b1" width="10" height="10" stroke-width="0" />
+<rect x="30" y="40" fill="#ffe59d" width="10" height="10" stroke-width="0" />
+<rect x="40" y="40" fill="#f6d389" width="10" height="10" stroke-width="0" />
+<rect x="50" y="40" fill="#ceaf75" width="10" height="10" stroke-width="0" />
+<rect x="60" y="40" fill="#a68a60" width="10" height="10" stroke-width="0" />
+<rect x="70" y="40" fill="#acda8d" width="10" height="10" stroke-width="0" />
+<path d="M 5 5 L 5 5 L 15 5 L 25 5 L 25 15 L 25 25 L 25 35 L 25 45 L 35 45 L 45 45 L 55 45 L 65 45 L 75 45 L 75 35 L 75 25 L 75 15 L 75 5 L 65 5 L 55 5 L 45 5 L 35 5 L 35 15 L 35 25 L 35 35 L 45 35 L 55 35 L 65 35 L 65 25 L 65 15 L 55 15 L 45 15 L 45 25 L 55 25 " stroke="red" stroke-width="1px" fill="transparent" />
+</svg>
