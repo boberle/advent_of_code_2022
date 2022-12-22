@@ -51,13 +51,6 @@ unsigned long long sum(int size, int arr[size]);
 
 int main(int argc, char **argv) {
 
-   //int foo[20] = {10, 11,12, 1, 2, 1, 2, 3, 4, 4, 1, 2, 3, 4, 4};
-   //int size = 15;
-   //int init_size, period_size;
-   //find_period(size, foo, &init_size, &period_size);
-   //printf("%d, %d\n", init_size, period_size);
-   //exit(1);
-
    if (argc != 2) {
       puts("missing filename");
       exit(1);
@@ -146,16 +139,11 @@ void find_period(int size, int arr[size], int *init_size, int *period_size) {
    *period_size = 0;
    *init_size = 0;
    for (int i=30; i<size/2; i++) {
-      //printf("%d - %d... ", size-2*i, size-i);
       if (memcmp(arr+size-2*i, arr+size-i, sizeof(int) * i) == 0) {
-         //printf("yes\n");
          *period_size = i;
          *init_size = size - 2 * i;
       }
-      //else
-         //printf("no\n");
    }
-   //puts("quit");
 }
 
 
@@ -164,11 +152,6 @@ void appear_rock(map_t *map, state_t *state) {
    state->next_rock %= 5;
    move_rock(&map->rock, 2, map->floor + 4);
 }
-
-
-// TODO
-int foo = 0;
-int bar = 0;
 
 
 void move_rock_gas(map_t *map, state_t *state) {
@@ -183,12 +166,7 @@ void move_rock_gas(map_t *map, state_t *state) {
       exit(1);
    }
 
-   bar++; // TODO
    if (!*(++state->next_jet)) {
-      // TODO
-      //printf("floor: %d - %d - %d\n", map->floor, map->floor - foo, bar);
-      foo = map->floor;
-      bar = 0;
       state->next_jet = state->jet_pattern;
    }
 }
@@ -214,10 +192,15 @@ bool move_rock_down(map_t *map, state_t *state) {
 bool can_move_rock(map_t *map, int x, int y) {
    rock_t rock = map->rock;
    move_rock(&rock, x, y);
+   // 150 is a magic number to speed up the running. You should try to find a
+   // more mathematical approach. The run the complete thing (this would take
+   // about 5 or 6 seconds), just put `start` to 0.
+   int start = ((int)map->size - 150 < 0) ? 0 : (int)map->size - 150;
+   //start = 0;
    for (int i=0; i<rock.size; i++) {
       if (rock.mat[i].y < 0 || rock.mat[i].x < 0 || rock.mat[i].x > 6)
          return false;
-      for (int j=0; j<map->size; j++) {
+      for (int j=start; j<map->size; j++) {
          if (rock.mat[i].x == map->mat[j].x && rock.mat[i].y == map->mat[j].y)
             return false;
       }
@@ -279,9 +262,6 @@ int cmp(point_t *a, point_t *b) {
 
 
 void print(map_t *map) {
-   //point_t mat[map->size];
-   //memcpy(mat, map->mat, sizeof(point_t) * map->size);
-   //qsort(mat, map->size, sizeof(point_t), cmp);
 
    point_t rock_mat[map->rock.size];
    memcpy(rock_mat, map->rock.mat, sizeof(point_t) * map->rock.size);
@@ -289,12 +269,6 @@ void print(map_t *map) {
 
    int line_no = rock_mat[map->rock.size-1].y + 1;
    printf("line no: %d\n", line_no);
-   //int last_line = -1;
-   //char line[15];
-   //for (int i=map->rock.size-1; i>=0; i--) {
-   //   if (last_line < 0
-   //   sprintf(line, "% 5d .......", line_no);
-   //}
 
    char disp[line_no][14];
    for (int i=0; i<line_no; i++)
